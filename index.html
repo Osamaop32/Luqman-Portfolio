@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#070914" />
+  <meta name="description" content="Luqman M Ashraf — Front-end Developer & UI Designer. Building responsive, interactive web experiences." />
+  <title>Luqman M Ashraf | 3D Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="loading">
+  <div class="loader" id="loader" aria-label="Loading portfolio" role="status">
+    <div class="loader-panel lp-top"></div><div class="loader-panel lp-bottom"></div>
+    <div class="loader-content">
+      <div class="loader-logo"><span class="loader-ring"></span><span class="loader-ring r2"></span><b>L</b></div>
+      <div class="loader-word" id="loaderWord" lang="en">Hello</div>
+      <div class="loader-lang" id="loaderLang">English</div>
+      <div class="loader-bar"><span id="loaderBar"></span></div>
+      <div class="loader-meta"><span>LOADING PORTFOLIO</span><b id="loaderPct">0%</b></div>
+    </div>
+  </div>
+
+  <div class="noise"></div>
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Luqman home"><span class="brand-mark">L</span><span>LUQMAN<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+      <nav class="nav" id="nav">
+        <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse"></span> AVAILABLE FOR OPPORTUNITIES</div>
+          <p class="hello">HELLO, I'M</p>
+          <h1>Luqman M.<br><span class="gradient-text">Ashraf</span><span class="cursor">_</span></h1>
+          <h2>Front-end Developer <span class="slash">/</span> UI Enthusiast</h2>
+          <p class="hero-description">I turn ideas into clean, responsive and interactive digital experiences. Focused on modern web design, thoughtful details and smooth user experiences.</p>
+          <div class="hero-actions"><a class="button primary" href="#projects">Explore my work <span>↗</span></a><a class="button secondary" href="#contact">Get in touch</a></div>
+          <div class="hero-meta"><div><strong>05+</strong><span>Core technologies</span></div><i></i><div><strong>100%</strong><span>Learning mindset</span></div></div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="visual-glow"></div>
+          <div class="floating-tag tag-code"><span>⌘</span> CLEAN CODE</div>
+          <div class="floating-tag tag-ui"><span>✳</span> CREATIVE UI</div>
+          <div class="glass-card">
+            <div class="card-top"><span></span><span></span><span></span><small>developer.js</small></div>
+            <div class="code-lines">
+              <p><b>const</b> developer = {</p>
+              <p class="indent"><em>name:</em> <i>'Luqman'</i>,</p>
+              <p class="indent"><em>role:</em> <i>'Frontend Dev'</i>,</p>
+              <p class="indent"><em>passion:</em> <i>'Building UI'</i>,</p>
+              <p class="indent"><em>status:</em> <i class="green">'learning + creating'</i></p>
+              <p>};</p>
+              <p class="code-end"><b>developer</b>.buildFuture<span class="blink">();</span></p>
+            </div>
+            <div class="card-bottom"><span class="live-dot"></span> SYSTEM ONLINE <span>v1.0.26</span></div>
+          </div>
+          <div class="mini-cube"><div class="cube-face front">L</div><div class="cube-face back">✦</div><div class="cube-face right">01</div><div class="cube-face left">UI</div><div class="cube-face top">✧</div><div class="cube-face bottom">DEV</div></div>
+          <div class="visual-caption">DESIGN <span>×</span> CODE <span>×</span> INNOVATION</div>
+        </div>
+        <a class="scroll-hint" href="#about"><span></span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-heading reveal"><p class="section-kicker">01 / WHO I AM</p><h2>Building for the <span class="gradient-text">digital world.</span></h2></div>
+        <div class="about-grid">
+          <div class="about-note reveal"><div class="note-icon">✳</div><p class="large-copy">Curious mind.<br>Creative builder.<br><span class="muted">Always improving.</span></p><div class="note-line"></div><p class="small-copy">I enjoy turning design ideas into useful websites and learning the technology behind every interaction.</p></div>
+          <div class="about-content reveal"><p>I'm a beginner front-end developer building my skills through hands-on projects. I work with HTML, CSS, JavaScript and modern styling tools to create responsive websites that look good across devices.</p><p>My goal is to grow into a professional software developer, keep experimenting with new ideas and deliver work that makes the web feel simple and enjoyable.</p><div class="facts"><div><strong>01</strong><span>Responsive first</span></div><div><strong>02</strong><span>Detail focused</span></div><div><strong>03</strong><span>Always learning</span></div></div></div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading reveal"><p class="section-kicker">02 / MY TOOLKIT</p><h2>Tools I use to <span class="gradient-text">create.</span></h2><p class="section-subtitle">My skills and how confident I am in each one.</p></div>
+        <div class="skills-grid"><article class="skill-card reveal"><span class="skill-number">01</span><div class="skill-icon blue">W</div><h3>MS Office</h3><p>Word, Excel and PowerPoint work</p><div class="skill-bar"><span style="--w:90%"></span></div><div class="skill-foot"><small>CONFIDENT</small><strong>90%</strong></div></article><article class="skill-card reveal"><span class="skill-number">02</span><div class="skill-icon orange">5</div><h3>HTML & CSS</h3><p>Responsive layouts, structure & styling</p><div class="skill-bar"><span style="--w:65%"></span></div><div class="skill-foot"><small>PRACTICING</small><strong>65%</strong></div></article><article class="skill-card reveal"><span class="skill-number">03</span><div class="skill-icon yellow">JS</div><h3>JavaScript</h3><p>DOM, events and interactive features</p><div class="skill-bar"><span style="--w:40%"></span></div><div class="skill-foot"><small>LEARNING</small><strong>40%</strong></div></article><article class="skill-card reveal"><span class="skill-number">04</span><div class="skill-icon cyan">⌘</div><h3>Computer Operator</h3><p>Computer operation and office work</p><div class="skill-bar"><span style="--w:80%"></span></div><div class="skill-foot"><small>CONFIDENT</small><strong>80%</strong></div></article><article class="skill-card reveal"><span class="skill-number">05</span><div class="skill-icon violet">✚</div><h3>Medical Pharmacy</h3><p>Pharmacy knowledge and medical store work</p><div class="skill-bar"><span style="--w:95%"></span></div><div class="skill-foot"><small>CONFIDENT</small><strong>95%</strong></div></article><article class="skill-card reveal"><span class="skill-number">06</span><div class="skill-icon pink">✦</div><h3>UI/UX Design</h3><p>Creative interface and gaming UI design</p><div class="skill-bar"><span style="--w:30%"></span></div><div class="skill-foot"><small>LEARNING</small><strong>30%</strong></div></article><article class="skill-card reveal"><span class="skill-number">07</span><div class="skill-icon violet">B</div><h3>Bootstrap 5</h3><p>Fast responsive interface development</p><div class="skill-bar"><span style="--w:75%"></span></div><div class="skill-foot"><small>PRACTICING</small><strong>75%</strong></div></article><article class="skill-card reveal"><span class="skill-number">08</span><div class="skill-icon cyan">T</div><h3>Tailwind CSS</h3><p>Utility-first modern UI styling</p><div class="skill-bar"><span style="--w:65%"></span></div><div class="skill-foot"><small>PRACTICING</small><strong>65%</strong></div></article><article class="skill-card reveal"><span class="skill-number">09</span><div class="skill-icon pink">F</div><h3>Figma</h3><p>Wireframes and interface exploration</p><div class="skill-bar"><span style="--w:40%"></span></div><div class="skill-foot"><small>LEARNING</small><strong>40%</strong></div></article></div>
+      </section>
+
+      <section class="section services-section" id="services">
+        <div class="section-heading reveal"><p class="section-kicker">03 / WHAT I OFFER</p><h2>Services I <span class="gradient-text">provide.</span></h2><p class="section-subtitle">From front-end development and UI design to everyday office work.</p></div>
+        <div class="services-grid"><article class="service-card reveal"><span class="skill-number">01</span><div class="skill-icon cyan">⌨</div><h3>Frontend Development</h3><p>Clean, fast and interactive front-end builds with HTML, CSS, JavaScript and Bootstrap.</p></article><article class="service-card reveal"><span class="skill-number">02</span><div class="skill-icon pink">✦</div><h3>UI/UX Design</h3><p>Creative and modern user interface designs with a smooth, user-friendly experience.</p></article><article class="service-card reveal"><span class="skill-number">03</span><div class="skill-icon violet">◈</div><h3>Gaming UI Design</h3><p>Creative gaming interfaces with bold neon designs and dark, high-energy styling.</p></article><article class="service-card reveal"><span class="skill-number">04</span><div class="skill-icon blue">◧</div><h3>Web Development</h3><p>Modern responsive websites using HTML, CSS and Bootstrap.</p></article><article class="service-card reveal"><span class="skill-number">05</span><div class="skill-icon orange">▭</div><h3>Responsive Design</h3><p>Mobile and desktop friendly website layouts that work on every screen.</p></article><article class="service-card reveal"><span class="skill-number">06</span><div class="skill-icon yellow">⌘</div><h3>Computer Operator</h3><p>Computer operation and office related work handled with care.</p></article><article class="service-card reveal"><span class="skill-number">07</span><div class="skill-icon cyan">▤</div><h3>Office Services</h3><p>Professional computer and office productivity work.</p></article><article class="service-card reveal"><span class="skill-number">08</span><div class="skill-icon violet">≡</div><h3>Data Entry</h3><p>Accurate and organized data entry services.</p></article><article class="service-card reveal"><span class="skill-number">09</span><div class="skill-icon blue">W</div><h3>MS Office</h3><p>Word, Excel and PowerPoint related work.</p></article></div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="section-heading reveal"><p class="section-kicker">04 / SELECTED WORK</p><h2>Ideas turned into <span class="gradient-text">projects.</span></h2><p class="section-subtitle">Live projects I have built — click ↗ to open the demo.</p></div>
+        <div class="projects-grid"><article class="project-card reveal" data-tilt><div class="project-art art-dental"><div class="art-window"><div class="art-nav"></div><div class="art-title"></div><div class="art-line"></div><div class="art-button"></div><div class="art-circle">✦</div></div><span class="art-label">HEALTHCARE / WEB</span></div><div class="project-info"><div><span class="project-type">01 — WEBSITE</span><h3>Belleville Dental</h3></div><div class="project-links"><a href="https://github.com/Osamaop32/Belleville-Dental-2.0" target="_blank" rel="noreferrer" aria-label="Belleville Dental source code" title="Source code">&lt;/&gt;</a><a href="https://osamaop32.github.io/Belleville-Dental-2.0/" target="_blank" rel="noreferrer" aria-label="Open Belleville Dental live demo" title="Live demo">↗</a></div><p>Responsive dental clinic website with clean sections, services and a modern, trustworthy UI.</p><div class="tags"><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JavaScript</span></div></div></article><article class="project-card reveal" data-tilt><div class="project-art art-gaming"><div class="game-screen"><div class="game-orb"></div><div class="game-word">NEXT<br>LEVEL</div><div class="game-stats"><span></span><span></span><span></span></div></div><span class="art-label">GAMING / UI</span></div><div class="project-info"><div><span class="project-type">02 — WEBSITE</span><h3>Gaming Zone Website</h3></div><div class="project-links"><a href="https://github.com/Osamaop32/Gaming-Zone-Website" target="_blank" rel="noreferrer" aria-label="Gaming Zone Website source code" title="Source code">&lt;/&gt;</a><a href="https://osamaop32.github.io/Gaming-Zone-Website/" target="_blank" rel="noreferrer" aria-label="Open Gaming Zone Website live demo" title="Live demo">↗</a></div><p>Dark gaming-inspired website with bold typography, neon accents and a high-energy layout.</p><div class="tags"><span>HTML</span><span>CSS</span><span>Bootstrap</span></div></div></article><article class="project-card reveal" data-tilt><div class="project-art art-password"><div class="terminal"><div class="terminal-head"><span></span><span></span><span></span><b>SECURITY CHECK</b></div><div class="terminal-text">&gt; password_strength()<br><i>●●●●●●●●●●</i><br><em>STRONG PASSWORD</em><br><small>✓ uppercase &nbsp; ✓ symbol<br>✓ number &nbsp;&nbsp;&nbsp; ✓ length</small></div></div><span class="art-label">TOOL / JAVASCRIPT</span></div><div class="project-info"><div><span class="project-type">03 — WEB TOOL</span><h3>Password Checker</h3></div><div class="project-links"><a href="https://github.com/Osamaop32/Password-Checker" target="_blank" rel="noreferrer" aria-label="Password Checker source code" title="Source code">&lt;/&gt;</a><a href="https://osamaop32.github.io/Password-Checker/" target="_blank" rel="noreferrer" aria-label="Open Password Checker live demo" title="Live demo">↗</a></div><p>A password strength checker that uses regular expressions to give live feedback while typing.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div></article><article class="project-card reveal" data-tilt><div class="project-art art-login"><div class="login-box"><div class="login-avatar">👤</div><div class="login-field"></div><div class="login-field"></div><div class="login-btn">LOGIN</div><div class="login-links"><span></span><span></span></div></div><span class="art-label">AUTH / JAVASCRIPT</span></div><div class="project-info"><div><span class="project-type">04 — WEB APP</span><h3>Login & Register System</h3></div><div class="project-links"><a href="https://github.com/Osamaop32/Login-Register-System" target="_blank" rel="noreferrer" aria-label="Login & Register System source code" title="Source code">&lt;/&gt;</a><a href="https://osamaop32.github.io/Login-Register-System/" target="_blank" rel="noreferrer" aria-label="Open Login & Register System live demo" title="Live demo">↗</a></div><p>A clean login and registration interface with form validation and a smooth user flow.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div></article><article class="project-card reveal" data-tilt><div class="project-art art-todo"><div class="todo-box"><div class="todo-head"><b>QUEST LOG</b><span>3/5</span></div><div class="todo-row done"><i></i><u></u></div><div class="todo-row done"><i></i><u></u></div><div class="todo-row"><i></i><u></u></div><div class="todo-row"><i></i><u></u></div></div><span class="art-label">GAMING / JAVASCRIPT</span></div><div class="project-info"><div><span class="project-type">05 — WEB APP</span><h3>Gaming To-Do List</h3></div><div class="project-links"><a href="https://github.com/Osamaop32/Gaming-ToDolist" target="_blank" rel="noreferrer" aria-label="Gaming To-Do List source code" title="Source code">&lt;/&gt;</a><a href="https://osamaop32.github.io/Gaming-ToDolist/" target="_blank" rel="noreferrer" aria-label="Open Gaming To-Do List live demo" title="Live demo">↗</a></div><p>A gaming-styled task manager to add, complete and remove tasks with a neon interface.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div></article></div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-panel reveal">
+          <div class="contact-orb"></div>
+          <p class="section-kicker">05 / CONTACT ME</p>
+          <h2>Let's work <span class="gradient-text">together.</span></h2>
+          <h3 class="contact-sub">Get In Touch</h3>
+          <p class="contact-copy">Feel free to contact me for projects, collaborations or questions.</p>
+          <ul class="contact-list">
+            <li><span class="ci">☎</span><div><small>PHONE</small><a href="tel:+923102804360">03102804360</a></div></li>
+            <li><span class="ci">⌖</span><div><small>ADDRESS</small><p>Nayabad, Lyari</p></div></li>
+            <li><span class="ci">✉</span><div><small>EMAIL</small><a href="mailto:luqmanhakeem266@gmail.com">luqmanhakeem266@gmail.com</a></div></li>
+          </ul>
+          <div class="social-row"><small>SOCIAL MEDIA</small><div><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <b>↗</b></a><a href="https://github.com/Osamaop32" target="_blank" rel="noreferrer">GitHub <b>↗</b></a><a href="https://wa.me/923102804360" target="_blank" rel="noreferrer">WhatsApp <b>↗</b></a></div></div>
+        </div>
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <h3>Send Me a Message</h3>
+          <label>Your Name<input type="text" id="cName" name="name" placeholder="Enter your name" required></label>
+          <label>Your Email<input type="email" id="cEmail" name="email" placeholder="Enter your email" required></label>
+          <label>Message<textarea id="cMsg" name="message" rows="5" placeholder="Tell me about your project..." required></textarea></label>
+          <button class="button primary" type="submit">Send Message <span>↗</span></button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+    <footer><a class="brand" href="#home"><span class="brand-mark">L</span><span>LUQMAN<span class="brand-dot">.</span></span></a><p>Designed & built with curiosity. © <span id="year"></span> Luqman M Ashraf.</p><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
